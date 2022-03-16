@@ -156,3 +156,12 @@ a {
   align-self: flex-start;
   font-size: 15px;
 }
+
+.openSource {
+  text-decoration: none;
+  color: rgb(2, 54, 165);
+}
+
+p {
+  text-align: center;
+}
