@@ -1,0 +1,158 @@
+.container {
+  box-shadow: 0px 0px 0px 1px #c8e3ff, 0px 0px 0px 20px #fff,
+    0px 0px 0px 21px #e5e5e5, 0px 0px 10px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 700px;
+  height: 200px;
+  background: #e2e8f07c;
+  font-family: "Work Sans", sans-serif;
+  display: block;
+  margin: 40px auto;
+  color: #253244;
+}
+
+.headline {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 68px;
+}
+
+.city {
+  grid-column: span 6;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+}
+
+.time,
+.temp {
+  grid-column: 7 / span 2;
+  padding-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+}
+
+.temp {
+  grid-column: 10 / span 2;
+}
+
+.F {
+  transition: all 200ms ease-in-out;
+  position: relative;
+  z-index: 11;
+}
+
+.F:hover {
+  cursor: pointer;
+  border: 1px solid #c8d2df;
+  border-radius: 5%;
+  padding: 2px;
+}
+
+.C {
+  transition: all 200ms ease-in-out;
+  position: relative;
+  z-index: 11;
+}
+
+.C:hover {
+  cursor: pointer;
+  border: 1px solid #c8d2df;
+  border-radius: 5%;
+  padding: 2px;
+}
+
+a {
+  color: #253244;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px;
+}
+
+.location {
+  padding-left: 30px;
+  grid-column: span 6;
+  align-self: center;
+}
+
+::placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.form-control {
+  width: 278px;
+  padding: 5px;
+}
+
+.searchButton {
+  margin-left: -35px;
+  padding: 4px;
+  background: none;
+  opacity: 0.5;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.currentLocation {
+  padding: 4px;
+  background: none;
+  transition: all 200ms ease-in-out;
+  grid-column: 7 / span 2;
+  align-self: center;
+  font-size: 15px;
+  border: 1px solid #253244;
+  background-color: #fff;
+  color: #646363;
+  border-radius: 3px;
+}
+
+.currentLocation:hover {
+  cursor: pointer;
+}
+
+.weather {
+  grid-column: 10 / span 3;
+  align-self: flex-end;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.c-humidity {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px;
+}
+
+.humidity {
+  grid-column: 10 / span 2;
+  align-self: center;
+  font-size: 15px;
+}
+
+.c-wind {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px;
+}
+
+.wind {
+  grid-column: 10 / span 2;
+  align-self: flex-start;
+  font-size: 15px;
+}
